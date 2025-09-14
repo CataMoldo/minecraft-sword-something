@@ -1,5 +1,12 @@
 plugins {
-    id 'net.neoforged.gradle.userdev' version '7.0.0'
+    id 'net.neoforged.gradle.userdev' version '7.0.80'
+}
+
+repositories {
+    mavenCentral()
+    maven {
+        url "https://maven.neoforged.net/releases"
+    }
 }
 
 group = 'com.autosword'
@@ -15,7 +22,7 @@ minecraft {
 }
 
 dependencies {
-    implementation 'net.neoforged:neoforge:21.0.0-beta'
+    implementation 'net.neoforged:neoforge:21.1.0'
 }
 
 jar {
